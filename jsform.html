@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+</head>
+<body>
+    <form action="" onsubmit="return callfunction()">
+        <label for="username">Username</label>
+        <input type="text" id="username" autocomplete="off" onkeyup="username1()"><br>
+        <span id="usernameerror"></span>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" autocomplete="off" onkeyup="name1()" minlength="3"><br>
+        <span id="nameerror"></span>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" onkeyup="email1()" autocomplete="off"  ><br>
+        <span id="emailerror"></span>
+
+        <label for="password">Password</label>
+        <input type="text" id="password" ><br>
+        <span id="passworderror"></span>
+
+        <label for="cpassword">Confirm Password</label>
+        <input type="text" id="cpassword" autocomplete="off"  ><br>
+        <span id="cpassworderror"></span>
+
+        <label for="mobile">Mobile</label>
+        <input type="text" id="mobile" autocomplete="off"  maxlength="10" minlength="10"><br>
+        <span id="mobileerror"></span>
+
+        <input type="submit" id="btn" value="Submit Now">
+    </form>
+
+
+    <script src="js.js"></script>
+
+</body>
+</html>
